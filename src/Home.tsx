@@ -10,7 +10,6 @@ interface FormErrors {
 interface NoncePayload {
   nonce: string;
 }
-// hello
 
 interface ErrorResponse {
   message: string;
