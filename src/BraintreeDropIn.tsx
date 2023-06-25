@@ -1,11 +1,11 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import dropin from "braintree-web-drop-in";
 import { Button } from "reactstrap";
 import './index.css';
 
 const BraintreeDropIn = (props: any) => {
     const { onPaymentCompleted } = props;
-    const braintreeInstance = useRef<dropin.Dropin | null>(null);
+    const braintreeInstance = useRef<dropin.Dropin | undefined>();
     const [authorization, setAuthorization] = useState('');
 
     // Request client token from server when component mounts
