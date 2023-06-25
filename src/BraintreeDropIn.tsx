@@ -50,7 +50,7 @@ const BraintreeDropIn = (props: any) => {
     };
 
     return (
-        <div>
+        <div id="container">
             <div id="braintree-drop-in-div" />
             <Button className="braintreePayButton" color="primary" disabled={!braintreeInstance.current} onClick={handleClick}>
                 Pay
